@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+               "Helvetica Neue", Arial, sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Hero Apple */
+.hero {
+    height: 70vh;
+    background: url("../Images/pngtree-elegant-plate-of-gourmet-food-on-a-black-surface-delicious-dish-picture-image_15921874.jpg")
+                center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-text h1 {
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.hero-text p {
+    font-size: 1.4rem;
+}
+
+/* Mensajes */
+.mensaje {
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+/* COLORES DE RECTÁNGULOS */
+.color1 {
+    background-color: #c1364f;   /* suave dorado */
+}
+
+.color2 {
+    background-color: #5e1a25;   /* azul suave */
+}
+
+.color3 {
+    background-color: #191b2b;   /* gris elegante */
+}
+
+/* GRID PRINCIPAL */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 40px;
+}
+
+/* IMÁGENES */
+.menu-item img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* IMAGENES GRANDES ARRIBA */
+.menu-item.grande {
+    grid-column: span 3;
+}
+
+.menu-item.grande img {
+    width: 100%;
+    aspect-ratio: 16/8;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+/* ÚLTIMA IMAGEN CENTRADA Y MÁS HORIZONTAL */
+.menu-item.ultima img {
+    aspect-ratio: 16/10;
+    width: 90%;
+    margin: 0 auto;
+    display: block;
+}
+
+/* TITULOS */
+.menu-item h3 {
+    margin-top: 15px;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    margin-top: 60px;
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 1.2rem;
+}
